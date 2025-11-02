@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biojoias — Ciência, Design e Sustentabilidade</title>
+  <script src="https://kit.fontawesome.com/f1da051f34.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #d9f3e6, #ffffff);
+      color: #333;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+    }
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    header h1:hover {
+        transform: scale(110%);
+        color: #2f855a;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #2f855a;
+      font-weight: bold;
+    }
+    nav a:hover {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #3fca89;
+        border-bottom: 3px solid #3fca89;
+        transition: all 0.5s;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2, section h3 {
+      color: #276749;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media(min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      margin-top: 10px;
+      background-color: #2f855a;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+        background-color: #1b6d44;
+        transform: scale(110%);
+        margin: 5px;
+        transition: all 1s;
+    }
+    .highlight {
+      background-color: #d1fae5;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .highlight:hover {
+        transform: scale(110%);
+        transition: all 0.5s;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #2f855a;
+        text-align: center;
+        font-size: 1.2em;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        margin: auto;
+    }
+    aside i {
+        margin: 15px 5px;
+        color: #2f855a;
+        font-size: 1.1em;
+    }
+    aside i:hover {
+        scale: 120%;
+        color: #3fca89;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biojoias <i class="fa-solid fa-gem"></i></h1>
+    <nav>
+      <a href="#intro">Introdução</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#tecnicas">Técnicas</a>
+      <a href="#mercado">Mercado</a>
+      <a href="#caso">Estudo de Caso</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>O que são Biojoias?</h2>
+      <p>Peças produzidas a partir de materiais naturais sementes, fibras, cascas e folhas transformadas com processos que aumentam durabilidade e valor estético sem perder a origem orgânica. É a união entre <strong>tradição artesanal</strong> e <strong>ciência aplicada</strong>.</p>
+      <a href="#materiais" class="btn">Ver Materiais</a>
+      <a href="#tecnicas" class="btn">Como funciona</a>
+      <img src="https://static.wixstatic.com/media/e69477_a6d75404dccb4e88aea45e2e4d4db461~mv2.png/v1/fill/w_438,h_438,al_c,lg_1,q_85,enc_avif,quality_auto/e69477_a6d75404dccb4e88aea45e2e4d4db461~mv2.png" alt="biojoias" style="width: 250px; display: block; margin: auto; text-align: center;">
+    </section>
+
+    <section id="materiais" class="grid grid-2">
+      <div>
+        <h3>Materiais mais usados</h3>
+        <ul>
+          <li><strong>Sementes</strong> (açaí, jarina, tucumã, olho-de-cabra)</li>
+          <li><strong>Fibras</strong> (piaçava, cipó, tucumã)</li>
+          <li><strong>Madeiras leves</strong> e cascas tratadas</li>
+          <li><strong>Resinas naturais</strong> e acabamentos biodegradáveis</li>
+        </ul>
+      </div>
+      <div>
+        <h3 id="tecnicas">Técnicas e Biotecnologia</h3>
+        <ol>
+          <li><strong>Preservação</strong>: tratamentos que inibem fungos e microrganismos;</li>
+          <li><strong>Resinas eco</strong>: impermeabilização biodegradável;</li>
+          <li><strong>Pigmentos naturais</strong>: corantes sem metais pesados;</li>
+          <li><strong>Reaproveitamento</strong>: resíduos para compostagem e novos produtos.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="mercado" class="grid grid-3">
+      <div class="highlight">
+        <i class="fa-solid fa-hand"></i>
+        <h4>Produção</h4>
+        <p>Artesãos e cooperativas locais em comunidades tradicionais.</p>
+      </div>
+      <div class="highlight">
+        <i class="fa-solid fa-shop"></i>
+        <h4>Comercialização</h4>
+        <p>Feiras, lojas de turismo, marketplaces e nichos de moda sustentável.</p>
+      </div>
+      <div class="highlight">
+        <i class="fa-solid fa-leaf"></i>
+        <h4>Impacto</h4>
+        <p>Renda, manejo sustentável e valorização cultural, com cuidado para não predar recursos naturais.</p>
+      </div>
+    </section>
+
+    <section id="caso">
+      <h3>Estudo de caso: Amarjon Biojoias</h3>
+      <p>Transforma folhas, sementes e fibras em joias com técnicas de desidratação, impermeabilização e metalização leve. Integra design, preservação e comercialização internacional.</p>
+      <div class="grid grid-2">
+        <div class="highlight">
+          <h4>Pontos fortes</h4>
+          <ul>
+            <li>Design aliado à tecnologia</li>
+            <li>Comunicação sustentável</li>
+            <li>Acesso a mercados internacionais</li>
+          </ul>
+        </div>
+        <div class="highlight">
+          <h4>Desafios</h4>
+          <ul>
+            <li>Certificação de origem e fitossanidade</li>
+            <li>Escalabilidade mantendo sustentabilidade</li>
+            <li>Controle de qualidade para exportação</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Oportunidades e Recomendações</h3>
+      <ol>
+        <li>Capacitar comunidades em técnicas de preservação e acabamento;</li>
+        <li>Criar certificação e rastreabilidade regional;</li>
+        <li>Investir em P&D para resinas eco-friendly;</li>
+        <li>Contar a história de cada peça;</li>
+        <li>Parcerias com universidades para validar processos.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Conclusão</h3>
+      <p>Biojoias unem economia local, design e ciência de preservação. Com capacitação, certificação e inovação, o setor cresce sem degradar o meio ambiente e gera renda justa.</p>
+      <p>Dessa forma se você procura se presentirar e valorizar o seu embelezamento sem impactar negativamente o meio ambiente </p>
+      <button>Fale conosco</button>
+      <br>
+      <aside>
+          <i class="fa-solid fa-envelope" class="contato"></i>
+          <i class="fa-brands fa-instagram" class="contato"></i>
+          <i class="fa-brands fa-facebook" class="contato"></i>
+          <i class="fa-brands fa-whatsapp" class="contato"></i>
+      </aside>
+    </section>
+
+    <footer id="contato">
+      <p>© CCM Attilio Codato | Samuel MAscarenhas N°24 -  Felipe de Oliveira N°8</p>
+    </footer>
+  </main>
+</body>
+</html>
